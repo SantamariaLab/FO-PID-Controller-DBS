@@ -4,7 +4,7 @@
 
 #Fractional order controllers increase the robustness of closed-loop deep brain stimulation systems 
 
-#Authors: Antonio Coronel, J. Francisco Gomez Aguilar, Ivanka Stamova and Fidel Santamaria 
+#Authors: Antonio Coronel, J. Francisco-Gomez Aguilar, Ivanka Stamova and Fidel Santamaria 
 
 #The project was developed at the University of Texas at San Antonio under supervision of Dr. Fidel Santamaria 
 
