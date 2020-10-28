@@ -2,7 +2,7 @@
 %brain stimulation systems
 % Antonio Coronel, J. Francisco Gomez Aguilar, Ivanka Stamova and Fidel Santamaria
 %This program was made by Antonio Coronel
-%This program generates onylu the Figure 3, if you want to generate the
+%This program generates only the Figure 3, if you want to generate the
 %data, please refear to the Code titled: Max_Ki and Max_Kd
 %PLEASE REFER OUR WORK WHEN USING IT.
 clc
