@@ -60,7 +60,7 @@ aux=find(convergeF); %Find the each gain in which the STN converges to the desir
 Max_Kd(k+1)=gainrange(max(aux)); %Determinates the maximum gain in which the STN converges
 
 end
-Max_KdF=Max_Kd(1:11);
+Max_KdF=Max_Kd(2:11);
 
 figure
 plot(bet,Max_KdF,'black','LineWidth', 4)
