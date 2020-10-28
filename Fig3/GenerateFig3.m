@@ -3,7 +3,7 @@
 % Antonio Coronel, J. Francisco Gomez Aguilar, Ivanka Stamova and Fidel Santamaria
 %This program was made by Antonio Coronel
 %This program generates only the Figure 3, if you want to generate the
-%data, please refear to the Codes titled: Max_Kd_analysis.m
+%data, please refear to the Codes titled: Max_Ki_analysis.m and Max_Kd_analysis.m
 %PLEASE REFER OUR WORK WHEN USING IT.
 clc
 clear all
