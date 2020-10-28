@@ -12,6 +12,6 @@
 
 #We suggest including the memo.m and the PID_PD.m to your path directory 
 
-#The code was created by Antonio Coronel and Fidel Santamaria
+#All codes were created by Antonio Coronel and Fidel Santamaria
 
 #All right reserved 
