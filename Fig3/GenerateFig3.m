@@ -16,11 +16,11 @@ valuebet=[0.19;0.32;0.55;1.01;1.75;2.95;5.35;8.20;14.68;21.03];
 
 figure
 plot(alf,valuealf,'black','LineWidth', 4)
-xlabel('\alpha','fontsize',15)
-ylabel('K_{i}','fontsize',15)
+xlabel('$\alpha$','fontsize',15)
+ylabel('$K_{i}$','fontsize',15)
 box off
 figure
 plot(bet,valuebet,'black','LineWidth', 4)
-xlabel('\beta','fontsize',15)
-ylabel('K_{d}','fontsize',15)
+xlabel('$\beta$','fontsize',15)
+ylabel('$K_{d}$','fontsize',15)
 box off
