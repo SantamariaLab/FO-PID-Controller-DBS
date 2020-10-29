@@ -2,7 +2,7 @@
 %brain stimulation systems
 % Antonio Coronel, J. Francisco Gomez Aguilar, Ivanka Stamova and Fidel Santamaria
 %This program was made by Antonio Coronel
-%This program generates only the Figure 4, if you want to generate the
+%This program generates only the Figure 4a and Figure 4b, if you want to generate the
 %data, please use the code from Figure 2 and run the simulations with the
 %proper values (see the paper).
 %PLEASE REFER OUR WORK WHEN USING IT.
