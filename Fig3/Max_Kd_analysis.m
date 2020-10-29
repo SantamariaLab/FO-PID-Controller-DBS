@@ -23,12 +23,16 @@ bet=(1:-0.1:0.1)';
 Kp=15;
 Ki=115;
 Kd=0.15;
-Max_Kd=ones(length(alf),1);
-Max_Kd(1)=0.15; %Initial value to compute the Max Gains for each order
+Max_gain=ones(length(alf),1);
+Max_gain(1)=Kd; %Initial value to compute the Max Gains for each order, 
+%change this value depending of what gain range are you calculating
 
 for k=1:length(bet)
-gains=[Kp;Ki;Max_Kd(k)];
-ord=[alf(1);bet(k)]; %In each iteration a different order in de derivative is teasted
+gains=[Kp;Ki;Max_gain(k)]; % Select the gain range to compute
+ord=[alf(1);bet(k)]; %In each iteration a different order in de derivative is 
+%teasted, change this variable depending of what gain range are you computing
+%ord=[alf(k);bet(1)]; uncomment if you want to calculate the Ki range
+
 Wxx=[10.2;20.0;12.3;9.2;139.4]; %Do NOT change the synaptic weights
 
 %Change in orders  %DO not modify these lines
@@ -37,8 +41,10 @@ OM=repmat(ord',10,1);
 ordrange=linspace(ord(ord2c),ord(ord2c)*ordfac,10)';
 OM(:,ord2c)=ordrange';
 
-%Change in the gains, MOdify only the Kd gain(3)
-gain2c=3;gainfac=1.8; %gain to var multiply for a factor gainfac
+%Change in the gains
+gain2c=3; %In you are changing the gain Kd
+gain2c=2; %In you are changing the gain Ki
+gainfac=1.8; %gain to var multiply for a factor gainfac
 GM=repmat(gains',10,1);
 gainrange=linspace(gains(gain2c),gains(gain2c)*gainfac,10)';
 GM(:,gain2c)=gainrange';
@@ -57,10 +63,10 @@ end
 mfinal=squeeze(mean(out(round(0.5/h):end,1,:),1));
 convergeF=(abs(mfinal-21.8)<2.1); % Determinates if the STN converges to the desired STN
 aux=find(convergeF); %Find the each gain in which the STN converges to the desired STN
-Max_Kd(k+1)=gainrange(max(aux)); %Determinates the maximum gain in which the STN converges
+Max_gain(k+1)=gainrange(max(aux)); %Determinates the maximum gain in which the STN converges
 
 end
-Max_KdF=Max_Kd(2:11);
+Max_KF=Max_gain(2:11);
 
 figure
 plot(bet,Max_KdF,'black','LineWidth', 4)
