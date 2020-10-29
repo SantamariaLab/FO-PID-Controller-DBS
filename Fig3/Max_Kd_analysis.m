@@ -69,7 +69,7 @@ end
 Max_KF=Max_gain(2:11);
 
 figure
-plot(bet,Max_KdF,'black','LineWidth', 4)
+plot(bet,Max_KF,'black','LineWidth', 4)
 xlabel('$\beta$','fontsize',15)
 ylabel('$K_{d}$','fontsize',15)
 box off
