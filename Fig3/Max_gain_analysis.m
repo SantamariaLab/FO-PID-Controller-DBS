@@ -17,8 +17,6 @@ q=1.0;
 
 alf=(1:0.1:1.9)';
 bet=(1:-0.1:0.1)';
-% alf=1;
-% bet=1;
 %Starting gains
 Kp=15;
 Ki=115;
@@ -43,7 +41,7 @@ OM(:,ord2c)=ordrange';
 
 %Change in the gains
 gain2c=3; %In you are changing the gain Kd
-gain2c=2; %In you are changing the gain Ki
+%gain2c=2; %In you are changing the gain Ki
 gainfac=1.8; %gain to var multiply for a factor gainfac
 GM=repmat(gains',10,1);
 gainrange=linspace(gains(gain2c),gains(gain2c)*gainfac,10)';
