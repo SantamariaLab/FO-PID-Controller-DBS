@@ -10,6 +10,9 @@
 clc
 clear all
 close all
+set(groot, 'defaultAxesTickLabelInterpreter','latex'); 
+set(groot, 'defaultLegendInterpreter','latex');
+set(0, 'DefaultTextInterpreter', 'latex')
  
 load Stable.mat
 clear t
