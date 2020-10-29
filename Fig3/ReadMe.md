@@ -12,7 +12,7 @@ FO-PID-Controller-DBS
 
 #The funtion FControl_STN.m is the numerical solution of the mathematical model used here, we suggest to include it in the main path.
 
-#If you only want to generate the Figure 3, run code Interval, if you want to generate the data, run the code Max_gain_analysis.m
+#If you only want to generate the Figure 3, run code GenerateFig3.m, if you want to generate the data, run the code Max_gain_analysis.m
 
 #All codes were created by Antonio Coronel and Fidel Santamaria
 
